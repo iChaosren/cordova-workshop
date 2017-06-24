@@ -13,7 +13,7 @@ gulp.task('js', function(){
 });
 
 gulp.task('css', function(){
-  return gulp.src('www/less/*.less')
+  return gulp.src('www/less/app.less')
     .pipe(less())
     .pipe(minifyCSS())
     .pipe(gulp.dest('www/css'))
